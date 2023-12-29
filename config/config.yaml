@@ -1,0 +1,16 @@
+# config.yaml
+
+# General settings
+project_name: Warehouse Data Generator
+data_output_folder: data_output
+csv_files:
+  drivers: drivers.csv
+  trucks: trucks.csv
+  deliveries: deliveries.csv
+  expenses: expenses.csv
+
+# Data generation settings
+num_records: 1000  # Number of records to generate for each entity
+
+# Faker-specific settings
+faker_locale: en_US  # Locale for Faker library

@@ -20,5 +20,5 @@ This project generates synthetic data for a warehouse management system using Py
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/warehouse-data-generator.git
+   git clone https://github.com/BoyanTTodorov/Warehouse
    cd warehouse-data-generator

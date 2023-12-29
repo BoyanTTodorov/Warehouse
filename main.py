@@ -1,13 +1,5 @@
-# Import necessary classes from data_generator.py
-from data_generator import DataGenerator
+from data_generator import DataGenerator, DataProcessor
 
-# Define the DataProcessor class for exporting data to CSV
-class DataProcessor:
-    @staticmethod
-    def export_data_to_csv(filename, dataframe):
-        dataframe.to_csv(filename, index=False)
-
-# Check if the script is being run directly
 if __name__ == '__main__':
     # Initialize DataGenerator
     generator = DataGenerator()
