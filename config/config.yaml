@@ -1,7 +1,7 @@
 # config.yaml
 
 # General settings
-project_name: Warehouse Data Generator
+project_name: Warehouse
 data_output_folder: data_output
 csv_files:
   drivers: drivers.csv
