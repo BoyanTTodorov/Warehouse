@@ -15,12 +15,10 @@ class DataGenerator:
 
     def generate_deliveries(self, drivers_df, trucks_df):
         deliveries_data = [vars(self.Delivery(self.fake,
-                                            driver_name=row['name'],
-                                            truck_number=trucks_df.sample()['truck_number'].values[0]))
-                        for _, row in drivers_df.iterrows()]
+                                              driver_name=row['name'],
+                                              truck_number=trucks_df.sample()['truck_number'].values[0]))
+                           for _, row in drivers_df.iterrows()]
         return pd.DataFrame(deliveries_data)
-
-
 
     def generate_expenses(self, drivers_df):
         expenses_data = [vars(self.Expenses(self.fake,
@@ -43,7 +41,8 @@ class DataGenerator:
 
     class Delivery:
         def __init__(self, fake, driver_name=None, truck_number=None, type_of_cargo=None, start_point=None,
-                     destination=None, distance_in_km=None, truck_base_volume=None, current_cargo_volume=None):
+                     destination=None, distance_in_km=None, truck_base_volume=None, current_cargo_volume=None,
+                     delivery_date=None):  # Add delivery_date parameter
             self.driver_name = driver_name or fake.name()
             self.truck_number = truck_number or random.randint(1000, 9999)
             self.type_of_cargo = type_of_cargo or random.choice(["Electronics", "Clothing", "Food", "Furniture"])
@@ -52,6 +51,7 @@ class DataGenerator:
             self.distance_in_km = distance_in_km or random.randint(50, 500)
             self.truck_base_volume = truck_base_volume or random.randint(20, 100)
             self.current_cargo_volume = current_cargo_volume or random.randint(0, self.truck_base_volume)
+            self.delivery_date = delivery_date or pd.to_datetime(fake.date_between(start_date='-30d', end_date='today'))
 
     class Expenses:
         def __init__(self, fake, driver_name=None, gasoline_cost=None, driver_cost=None, maintenance_cost=None):

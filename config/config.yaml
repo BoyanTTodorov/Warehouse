@@ -1,16 +1,11 @@
-# config.yaml
-
-# General settings
-project_name: Warehouse
-data_output_folder: data_output
-csv_files:
-  drivers: drivers.csv
-  trucks: trucks.csv
-  deliveries: deliveries.csv
-  expenses: expenses.csv
-
-# Data generation settings
-num_records: 1000  # Number of records to generate for each entity
-
-# Faker-specific settings
-faker_locale: en_US  # Locale for Faker library
+name: Warehouse
+channels:
+  - defaults
+dependencies:
+  - python=3.8  # Specify your Python version
+  - pip
+  - Faker==8.19.0
+  - pandas==1.3.3
+  - seaborn==0.11.2
+  - statsmodels==0.13.0
+  - matplotlib==3.4.3
