@@ -1,6 +1,6 @@
 # Warehouse Data Generator
 
-This project utilizes Python and the Faker library to create synthetic data for a warehouse management system. The intention is to facilitate analysis in POWER BI by storing the generated data in a Sqlite serverless database. However, it's important to note that for compatibility with POWER BI, a new driver must be installed.
+This project leverages Python along with the Faker library to generate synthetic data designed for a warehouse management system. The objective is to streamline the analysis process in POWER BI by storing the artificially generated data in a Sqlite serverless database. Please be aware that to ensure compatibility with POWER BI, it is necessary to install a new driver.
 
 ## Table of Contents
 
