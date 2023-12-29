@@ -1,6 +1,0 @@
-# Google BigQuery configuration
-bigquery:
-  project_id: mystical-sphinx-337016
-  location: europe-west4
-  dataset_name: warehouse
-  connection_name: mystical-sphinx-337016:europe-west4:warehouse

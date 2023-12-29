@@ -1,0 +1,11 @@
+truck_number,type_of_cargo,start_point,destination,distance_in_km,truck_base_volume,current_cargo_volume
+99511ad4-9b25-4f87-a350-ae6d23246006,Food,Paulton,Bradside,121,61,39
+3ebceeb2-4d95-43d7-9cc6-ca0cdfbe7a89,Furniture,Moralesland,East Patricia,70,52,20
+303d985a-7ead-4f38-9783-7c3cd89547c7,Clothing,North Elizabeth,West Rebeccaland,487,41,21
+380365c6-ad11-46b8-a634-8d423bdf8567,Furniture,Lindaville,Robinville,63,31,18
+afdf72bc-f96f-497c-9506-5e7d12c7cbb0,Electronics,Gilbertport,Lake Theresaland,445,91,56
+30bf2bbd-07cc-48c2-9625-e1a031f8326a,Food,Davishaven,Lisaberg,417,37,32
+0273a906-a9e2-4a4c-8bdf-176730fae516,Furniture,Rogersport,Mahoneytown,494,30,22
+7b1b2af7-e02e-46ce-8c05-ce25786bea4d,Clothing,West Nicoleside,Codyville,175,89,85
+d75d7899-7bd1-4401-9c7f-4db4dbc6dd50,Furniture,West Elizabethborough,New Debraton,461,72,10
+9de94e33-a0f8-4ad5-aa6e-3285c3dd1cab,Furniture,Robertville,Rodriguezfurt,109,99,87
